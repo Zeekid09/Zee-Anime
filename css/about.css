@@ -1,0 +1,148 @@
+:root{
+    --primary: rgb(230, 115, 7);
+    --dark:rgb(8, 4, 4);
+    --light:#fff;
+    --shadow:0 1px 5px rgba(104,104,104,0.8);
+    --danger: rgba(104,104,104,0.8);
+}
+
+
+body{
+    background: var(--dark);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  url(fonts/Rubik_Distressed/RubikDistressed-Regular.ttf);;
+    line-height: 1.4;
+}
+
+header{
+    margin: auto;
+    padding: 30px 30px;
+    background: var(--dark);
+}
+
+.site-name{
+    text-align: center;
+    margin: 20px 0;
+}
+
+.site-name h1{
+    color: var(--primary);
+    font-size: 4rem;
+}
+
+
+nav{
+    margin-bottom: 20px;
+}
+nav ul{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(6, 1fr);
+    padding: 0;
+    list-style: none;
+}
+
+nav a{
+    background: var(--danger);
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--light);
+    display: block;
+    padding: 0.8rem;
+    text-align: center;
+    font-size: 1.1rem;
+    transition: 1s;
+}
+nav a:hover{
+    background: var(--primary);
+}
+.search{
+    display: flex;
+    
+}
+.search input{
+    border: none;
+    outline: none;
+    padding: 5px 5px;
+    margin: 0;
+    min-width: 90%;
+}
+.search ::placeholder{
+    color: var(--danger);
+}
+.btn{
+    min-width: 10%;
+    padding: 5px 6px;
+    border: 0;
+    background-color: var(--danger);
+    color: var(--primary);
+    font-size: 1.1rem;
+}
+/* --------------About begins---------------- */
+main{
+    padding: 40px 40px;
+    margin: auto;
+}
+main h2{
+    color: var(--primary);
+    text-align: center;
+    
+
+}
+main>p{
+    text-align: center;
+    color: var(--light);
+}
+.contact{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.contact p{
+    
+    text-align: center;
+    color: var(--light);
+}
+/* --------------About ends---------------- */
+
+/* ----------------footer---------------------- */
+footer{
+    margin-top: 2rem;
+    background: var(--primary);
+    color: var(--dark);
+    text-align: center;
+    padding: 1rem;
+}
+/* --------------end of footer----------------- */
+
+@media(max-width:770px) {
+    header nav ul{
+    grid-template-columns: 2fr;
+    }
+
+}
+
+@media(max-width:500px) {
+    .search input{
+        min-width: 90%;
+    }
+    .search button{
+        min-width: 10%;
+        font-size: 0.6rem;
+    }
+}
+@media(max-width:300px) {
+    .latest-tab{
+        grid-template-columns: 1fr;
+    }
+    .search input{
+        min-width: 90%;
+    }
+    .search button{
+        min-width: 10%;
+        font-size: 0.6rem;
+    }
+}
