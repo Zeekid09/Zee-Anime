@@ -118,15 +118,8 @@ button{
 .alt-btn:hover{
     background: var(--primary);
 }
-
-/*  */
 .comment{
-    margin: 50px 40px;
-
-}
-.comment h3{
-text-align: center;
-color: var(--light);
+    margin-top: 50px;
 }
 .two{
     display: grid;
@@ -152,8 +145,7 @@ textarea{
     padding: 9px;
     border-radius: 20px;
     text-align: left;
-    line-height: 1.1;
-    color: var(--light);
+    line-height: 1.;
 }
 
 
@@ -161,14 +153,12 @@ textarea{
     background: var(--dark);
     padding: 5px;
     font-size: 20px;
-    color:var(--light);
 }
 
 .fa-thumbs-down{
-    background: var(--dark);
-    padding: 5px;
-    font-size: 20px; 
-    color:var(--light); 
+  background: var(--dark);
+  padding: 5px;
+  font-size: 20px;  
 }
 
 .thumb{
@@ -180,7 +170,13 @@ span{
 
 }
 
-/*  */
+
+
+
+
+
+
+
 
 /* ----------------footer---------------------- */
 footer{
